@@ -24,6 +24,8 @@ li > div{
   margin-top: 75%;
 }
 
+/* Mediaquery voor detectie tablet-grootte (768px)
+*/
 @media screen and (max-width: 768px){
   li{
     width: 8em;
@@ -36,6 +38,8 @@ li > div{
   }
 }
 
+/* Mediaquery voor detectie smartphone-grootte (480px)
+*/
 @media screen and (max-width: 480px){
   li{
     width: 4em;

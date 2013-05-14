@@ -1,0 +1,22 @@
+1. Relatieve grootte content div: 960px --> 85%
+2. Mediaquery voor het detecteren van screensize
+	- @media screen and (max-width: 768px) voor tablet
+	- @media screen and (max-width: 480px) voor mobile
+	waarbij je stijl elementen kan overschrijven
+
+
+Note:
+De toevoeging van mediaqueries kan op verschillende manieren gebeuren:
+1. Een mediaquery gebruiken voor de detectie en op dat ogenblik een andere css file binnenhalen
+	@import('mobile.css') screen and (max-width:480px);
+2. Een mediaquery inline gebruiken, waardoor je maar 1 css file (efficienter)
+	@media screen and (max-width:480px){
+		//Add style
+	}
+3. Een link tag in de header waar je een media attribuut gaat aanspreken
+	<link href='mobile.css' type='text/css' rel='stylesheet' media='screen and (max-width:480px)' />
+
+Ook is een mediaquery bruikbaar in javascript. Dit biedt de mogelijkheid om andere functionaliteiten toe te voegen die niet mogelijk zijn in CSS.
+if(window.styleMedia.matchMedium("screen and (max-width:480px)")){
+	//Do Something
+}
