@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="demo.css"/>
+<title>Responsive demo 1</title>
+</head>
+<body>
+  <section id="content">
+    <ul id="data"></ul>
+  </section>
+  <div id="errors"></div>
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script>
+$(document).ready(function(){
+  $.ajax({
+    type:'GET',
+    dataType:'json',
+    url: 'http://www.pluralsight-training.net/odata/Courses',
+    timeout:15000,
+    success:function(data){
+      for (var i in data.d){
+        $("#courses").append('<li><div>' + data.d[i].Title +'</div></li>');
+      }
+    }
+}); 
+</script>
+</body>
+</html>
