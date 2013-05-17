@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="demo.css"/>
+<title>Responsive demo 2</title>
+</head>
+<body>
+
+  <a href="#!pagina1.html">Home</a>
+  <a href="#!pagina2.html">Pagina 2</a>
+  
+  <div id="content">
+ 
+  </div>
+
+  <div id="errors"></div>
+
+  <script>
+    window.onhashchange = function()
+    {
+        var hash = window.location.hash;
+        var uri = hash.split('!')[1];
+        var req = new XMLHttpRequest();
+
+        req.open('GET', uri, true);
+        req.onreadystatechange = function()
+          {
+
+            if(req.readyState === 4){
+
+              if(req.readyState === 200){
+                  var content = document.getElementById("content");
+                  content.innerHTML = req.responseText;
+
+              }
+            }
+          };
+
+      req.send();
+    }
+    if(!window.location.hash){
+      //window.location.hash = '#!pagina1.html';
+    }
+
+
+  </script>
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+</body>
+</html>
