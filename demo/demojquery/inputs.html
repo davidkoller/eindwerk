@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="demo.css"/>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+	<title>Inputs</title>
+</head>
+<body>
+  <div id="content">
+  	<h1>Inputs</h1>
+		<form>
+		     <label for="text-1">Text input:</label>
+		     <input type="text" name="text-1" id="text-1" value="">
+		     <label for="text-3">Text input Met Data Clear Button</label>
+		     <input type="text" data-clear-btn="true" name="text-3" id="text-3" value="" placeholder="Hier kan je ook text zetten">
+		     <label for="textarea-1">Textarea</label>
+  			 <textarea cols="40" rows="8" name="textarea-1" id="textarea-1"></textarea>
+  			 <label for="number-1">Number</label>
+     		 <input type="number" data-clear-btn="false" name="number-1" id="number-1" value="">
+			 <label for="datetime-3">Datetime</label>
+   			 <input type="datetime-local" data-clear-btn="false" name="datetime-3" id="datetime-3" value="">
+   			<label for="color-1">Color</label>
+    		<input type="color" data-clear-btn="false" name="color-1" id="color-1" value="">
+    		<label for="file-1">File</label>
+     		<input type="file" data-clear-btn="false" name="file-1" id="file-1" value="">
+     		<label for="text-6">Disabled</label>
+     		<input type="text" name="text-6" id="text-6" value="" disabled="disabled">
+		</form>
+
+	</div>
+</body>
+</html>
