@@ -1,0 +1,44 @@
+Filmpjes van thenewboston zijn heel goed. 
+Ze beginnen wel van helemaal het begin met uitleggen wat javascript en jquery is. 
+Sommige filmpjes zijn wel echt heel basis en kunnen zeker overgeslagen worden.
+Hieronder is een overzicht van de ruwe inhoud van de filmpjes
+
+http://thenewboston.org/list.php?cat=32
+
+1. Intro
+5. Uitleg rond inline & external
+6-10: Basis rond pageloading
+11-26: Selecteren van elementen uit HTML (niets speciaal)
+27-30: Selectors gebruiken voor aantal voorbeelden
+31 - 41: Events en Eventhandling
+(36): toggle
+42 : bind events (!)
+43 : Live code toeveogen in HTML (!)
+44-51: Hovertext, eventdetectie
+52- : HTML en toevoegen en verwijderen an attirbutes
+66 -78: effects
+97-105: AJAX (!)
+115-138 : plugins
+
+JQUERY UI: (Widgets)
+141-143 : Draggable
+144-146 : Dropable
+147-148 : Sortable
+149-151 : Resizable
+152-153 : Accordion
+154-155 : Datepicker
+156-158 : Dialog
+159-160 : Progressbar
+161-162 : Slider
+163-165 : Tabs
+166-167 : Drag&Drop lists
+168-170 : Link met php & mysql voor username check (goed voorbeeld)
+171-172 : Voorbeeld met werken met slidedown
+173-174 ; Countdown & redirect voorbeeld
+178-181 : Instant search. Voorbeeld met ajax info ophalen en results onmiddelijk weergeven
+182-186 ; Online & Offline push voorbeelden
+187-188 : Multiple file upload
+189-191 : Div statisch blijft
+192-194 : Textarea emoticons
+195-198 : show-hide fields
+199-200 : submit form on element change
