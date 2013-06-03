@@ -1,0 +1,25 @@
+1. JQuery basic
+	-Selectors
+	-Events
+	-HTML
+2. JQuery Mobile
+	-Imports
+	-Structuur
+	-Widgets
+		- Grid
+			- fieldset ui-grid-a
+		- Toolbars (fixed)
+		- Attributs
+			- Data-role
+			- data-theme
+			- data-icon
+			- data-iconpos
+			- data-inline
+		- Collapsible
+			- 
+	-Navigation
+		- Dialogs
+		- Transitions
+	-StyleEditor
+
+
