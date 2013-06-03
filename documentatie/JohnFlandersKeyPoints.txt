@@ -1,0 +1,37 @@
+Mobile apps: why
+- Current issues: different screen sizes, different capabilities
+- HTML5 (overview)
+(-- Geolocation (example?))
+(-- Local storage (example?))
+- CSS3 (overview)
+(-- Media Queries (example?))
+(-- Responsive design (example?))
+- Types of mobile applications
+-- Responsive site
+-- Native application
+-- Hybrid
+
+Designing for mobile (general)
+- Considerations: screen size, network limitations, touch interface
+- Metatags for mobile
+- Navigation
+-- Hashbang: hashChangeEvent
+- Data URI
+- Geolocation (W3C Geolocation API)
+- Dealing with offline
+-- Caching data
+-- detecting offline
+
+Responsive Design
+- Usage: why and when
+- Media queries
+
+--- EXTRA ---
+
+Touch
+- Touch events
+- Swipes
+- Best practices
+
+
+
