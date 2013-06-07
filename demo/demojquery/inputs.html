@@ -8,7 +8,11 @@
 	<title>Inputs</title>
 </head>
 <body>
-  <div id="content">
+	<div data-role="page" data-add-back-btn="true">
+	<div data-role="header">
+		<h1> Inputs header </h1>
+	</div>
+  <div data-role="content" id="content">
   	<h1>Inputs</h1>
 		<form>
 		     <label for="text-1">Text input:</label>
@@ -17,8 +21,8 @@
 		     <input type="text" data-clear-btn="true" name="text-3" id="text-3" value="" placeholder="Hier kan je ook text zetten">
 		     <label for="textarea-1">Textarea</label>
   			 <textarea cols="40" rows="8" name="textarea-1" id="textarea-1"></textarea>
-  			 <label for="number-1">Number</label>
-     		 <input type="number" data-clear-btn="false" name="number-1" id="number-1" value="">
+  			 <label for="number-1">Number (only 5's)</label>
+     		 <input type="number" data-clear-btn="false" name="number-1" id="number-1" value="" pattern="[5]*">
 			 <label for="datetime-3">Datetime</label>
    			 <input type="datetime-local" data-clear-btn="false" name="datetime-3" id="datetime-3" value="">
    			<label for="color-1">Color</label>
@@ -28,7 +32,8 @@
      		<label for="text-6">Disabled</label>
      		<input type="text" name="text-6" id="text-6" value="" disabled="disabled">
 		</form>
-
 	</div>
+	<div data-role="footer"><h4>Inputs Footer</h4></div>
+</div>
 </body>
 </html>

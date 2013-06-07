@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="demo.css"/>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+	<title>Normal Events</title>
+	<script>
+	$(document).ready(function(){
+		$("#mybutton").bind("click",function(event){
+			$("#message").html("<p>You see the message now</p>");
+		});
+});
+</script>
+</head>
+<body>
+	<div data-role="page" data-add-back-btn="true">
+	<div data-role="header">
+		<h1> Normal Events header </h1>
+	</div>
+  <div data-role="content" id="content">
+  		<button id="mybutton">Click this to see message</button>
+  		<div id="message"></div>
+  </div>
+  <div data-role="footer"><h4>Normal Events Footer</h4></div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="demo.css"/>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+	<title>Touch Events</title>
+	<script>
+		$(document).ready(function(){
+			$("#tap").bind("tap", function(){
+				$("#message").html("<p>You just tapped</p>");
+			});
+			$("#taphold").bind("taphold", function(){
+				$("#message").html("<p>You just tapped and holded</p>");
+			});
+			$("#swipe").bind("swipe", function(){
+				$("#message").html("<p>You just swiped</p>");
+			});
+			$("#swipeleft").bind("swipeleft", function(){
+				$("#message").html("<p>You just swiped left</p>");
+			});
+			$("#swiperight").bind("swiperight", function(){
+				$("#message").html("<p>You just swiped right</p>");
+			});
+		});
+	</script>
+</head>
+<body>
+	<div data-role="page" data-add-back-btn="true">
+	<div data-role="header">
+		<h1> Touch Events header </h1>
+	</div>
+  <div data-role="content" id="content">
+  		
+  		<div id="message"></div>
+
+  		<p id="tap"> Tap Here </p>
+
+  		<p id="taphold"> Tap and Hold Here </p>
+
+  		<p id="swipe"> Swipe Here </p>
+
+  		<p id="swipeleft"> Swipe Left Here </p>
+
+  		<p id="swiperight"> Swipe Right Here </p>
+
+
+  </div>
+  <div data-role="footer"><h4>Touch Events Footer</h4></div>
+</div>
+</body>
+</html>

@@ -1,7 +1,6 @@
 1. JQuery basic
 	-Selectors
 	-Events
-	-HTML
 2. JQuery Mobile
 	-Imports
 	-Structuur
@@ -16,7 +15,6 @@
 			- data-iconpos
 			- data-inline
 		- Collapsible
-			- 
 	-Navigation
 		- Dialogs
 		- Transitions
