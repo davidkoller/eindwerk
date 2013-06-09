@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Notification Example</title>
+
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+
+    <script type="text/javascript" charset="utf-8" src="cordova-2.7.0.js"></script>
+    
+    <script type="text/javascript" charset="utf-8">
+    
+    function showAlert() {
+        navigator.notification.alert("Hello");
+    }
+
+    function playBeep() {
+        navigator.notification.beep(1);
+    }
+
+    function vibrate() {
+        navigator.notification.vibrate(2000);
+    }
+
+    </script>
+  </head>
+  <body>
+  
+  
+  <div data-role="page" id="page1">
+    <div data-theme="a" data-role="header">
+        <h3>
+            Notifications
+        </h3>
+    </div>
+    <div data-role="content">
+      
+    <button onclick="showAlert(); return false;">Show Alert</button><br>
+    <button onclick="playBeep(); return false;">Play Beep</button><br>
+    <button onclick="vibrate(); return false;">Vibrate</button><br>
+    
+    </div>
+    <div data-theme="a" data-role="footer">
+        <h3>
+            2013 KHLeuven
+        </h3>
+    </div>
+</div>
+  
+  
+  </body>
+</html>
